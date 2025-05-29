@@ -13,9 +13,9 @@ export const ThreeVisualization: React.FC<ThreeVisualizationProps> = ({
   maxMinutes = 480 // 8 hours default
 }) => {
   const mountRef = useRef<HTMLDivElement>(null);
-  const sceneRef = useRef<THREE.Scene>();
-  const rendererRef = useRef<THREE.WebGLRenderer>();
-  const frameId = useRef<number>();
+  const sceneRef = useRef<THREE.Scene | undefined>(undefined);
+  const rendererRef = useRef<THREE.WebGLRenderer | undefined>(undefined);
+  const frameId = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     if (!mountRef.current) return;
