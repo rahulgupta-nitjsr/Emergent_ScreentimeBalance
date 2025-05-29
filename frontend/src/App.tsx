@@ -4,9 +4,12 @@ import { RootState } from './store/store';
 import { resetDailyTimers } from './store/timersSlice';
 import { resetDailyScreenTime, updateEarnedTime } from './store/screenTimeSlice';
 import { calculateEarnedTime } from './utils/calculations';
+import { usePersistence } from './hooks/usePersistence';
 import { TimerBox } from './components/TimerBox';
 import { ScreenTimeBox } from './components/ScreenTimeBox';
 import { SummaryCard } from './components/SummaryCard';
+import { ThreeVisualization } from './components/ThreeVisualization';
+import { StreakCounter } from './components/StreakCounter';
 import './App.css';
 
 function App() {
