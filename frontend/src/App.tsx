@@ -16,6 +16,12 @@ function App() {
   const dispatch = useDispatch();
   const timers = useSelector((state: RootState) => state.timers.timers);
   const { earnedMinutes, usedMinutes } = useSelector((state: RootState) => state.screenTime);
+  
+  // Initialize persistence hook
+  usePersistence();
+
+  // Calculate total activity minutes for streak
+  const totalActivityMinutes = timers.reduce((total, timer) => total + timer.totalTime, 0);
 
   // Reset daily data and calculate earned time
   useEffect(() => {
@@ -31,6 +37,15 @@ function App() {
     const earned = calculateEarnedTime(timers);
     dispatch(updateEarnedTime(earned));
   }, [timers, dispatch]);
+
+  // Register service worker
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('SW registered'))
+        .catch(() => console.log('SW registration failed'));
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
