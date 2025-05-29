@@ -91,7 +91,21 @@ function App() {
               minutes={usedMinutes}
             />
           </div>
+
+          {/* Three.js Visualization */}
+          <div className="bg-white rounded-xl p-4 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-800 text-center mb-4">
+              Progress Visualization
+            </h3>
+            <ThreeVisualization
+              earnedMinutes={earnedMinutes}
+              usedMinutes={usedMinutes}
+            />
+          </div>
         </div>
+
+        {/* Streak Counter */}
+        <StreakCounter totalActivityMinutes={totalActivityMinutes} />
 
         {/* Daily Summary */}
         <div className="space-y-4">
