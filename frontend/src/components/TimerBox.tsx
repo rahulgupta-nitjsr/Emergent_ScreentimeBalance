@@ -27,23 +27,16 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
   const [clickCount, setClickCount] = useState(0);
 
   const handleClick = useCallback(() => {
-    setClickCount(prev => prev + 1);
-    
-    setTimeout(() => {
-      if (clickCount === 0) {
-        // Single click - toggle timer
-        if (isRunning) {
-          dispatch(stopTimer(id));
-        } else {
-          dispatch(startTimer(id));
-        }
-      }
-      setClickCount(0);
-    }, 300);
-  }, [clickCount, isRunning, dispatch, id]);
+    // Single click - toggle timer
+    if (isRunning) {
+      dispatch(stopTimer(id));
+    } else {
+      dispatch(startTimer(id));
+    }
+  }, [isRunning, dispatch, id]);
 
-  const handleDoubleClick = useCallback(() => {
-    setClickCount(0);
+  const handleDoubleClick = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
     setShowModal(true);
   }, []);
 
