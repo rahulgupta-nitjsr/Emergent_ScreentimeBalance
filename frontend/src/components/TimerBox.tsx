@@ -80,6 +80,9 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
         className={`relative p-6 rounded-2xl shadow-lg transition-all duration-200 active:scale-95 ${getBoxColor()} text-white min-h-[140px] flex flex-col justify-between cursor-pointer timer-box`}
         onClick={handleClick}
         onDoubleClick={handleDoubleClick}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onMouseLeave={handleTouchEnd}
       >
         <div className="flex justify-between items-start">
           <h3 className="text-lg font-bold">{name}</h3>
