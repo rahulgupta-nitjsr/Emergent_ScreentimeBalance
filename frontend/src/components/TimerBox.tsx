@@ -62,7 +62,7 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
   return (
     <>
       <div
-        className={`relative p-6 rounded-2xl shadow-lg transition-all duration-200 active:scale-95 ${getBoxColor()} text-white min-h-[140px] flex flex-col justify-between cursor-pointer`}
+        className={`relative p-6 rounded-2xl shadow-lg transition-all duration-200 active:scale-95 ${getBoxColor()} text-white min-h-[140px] flex flex-col justify-between cursor-pointer timer-box`}
         onClick={handleClick}
         onDoubleClick={handleDoubleClick}
       >
