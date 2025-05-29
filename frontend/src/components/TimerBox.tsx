@@ -89,7 +89,7 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
         </div>
 
         <div className="text-xs text-center opacity-75">
-          Tap to {isRunning ? 'stop' : 'start'} • Double tap for manual
+          Tap to {isRunning ? 'stop' : 'start'} • Hold for manual entry
         </div>
       </div>
 
