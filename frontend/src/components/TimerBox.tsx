@@ -40,6 +40,20 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
     setShowModal(true);
   }, []);
 
+  const handleTouchStart = useCallback(() => {
+    const timer = setTimeout(() => {
+      setShowModal(true);
+    }, 800); // 800ms long press
+    setPressTimer(timer);
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (pressTimer) {
+      clearTimeout(pressTimer);
+      setPressTimer(null);
+    }
+  }, [pressTimer]);
+
   const handleManualTime = useCallback((minutes: number) => {
     dispatch(addManualTime({ timerId: id, minutes }));
     setShowModal(false);
