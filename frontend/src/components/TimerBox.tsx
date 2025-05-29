@@ -24,6 +24,7 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
   const dispatch = useDispatch();
   const { elapsedTime, formatTime } = useTimer(isRunning, startTime);
   const [showModal, setShowModal] = useState(false);
+  const [pressTimer, setPressTimer] = useState<NodeJS.Timeout | null>(null);
 
   const handleClick = useCallback(() => {
     // Single click - toggle timer
