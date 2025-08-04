@@ -23,6 +23,21 @@
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* Enhanced card styling */
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Improved shadows */
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 /* Mobile-first responsive design */
 @media (max-width: 640px) {
   .container {
@@ -48,4 +63,9 @@ button, [role="button"] {
 button:focus, input:focus {
   outline: 2px solid #3B82F6;
   outline-offset: 2px;
+}
+
+/* Enhanced gradient background */
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
 }

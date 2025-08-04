@@ -5,7 +5,7 @@
 
 ScreenTime Balance is a revolutionary Progressive Web App that gamifies digital wellness by converting healthy activities into earned screen time. Break free from mindless scrolling and build a sustainable relationship with technology.
 
-![Main App Interface](docs/screenshots/app_with_activity_data.png)
+![Main App Interface](docs/screenshots/1%20Home%20Page.jpg)
 
 ---
 
@@ -43,8 +43,6 @@ Transform every healthy minute into valuable screen time with our intelligent mu
 | 📚 **Productive** | 1.5x | Skill building, career growth, achievement |
 | 😴 **Sleep** | +0.5x bonus | Recovery, cognitive function, mood regulation |
 
-![Timer Interface](docs/screenshots/timer_running_state.png)
-
 ### 📱 **Effortless One-Tap Interface**
 **Designed for real life, not perfect conditions:**
 - **Single tap**: Instant start/stop - no complicated menus
@@ -55,9 +53,45 @@ Transform every healthy minute into valuable screen time with our intelligent mu
 ### 🎯 **Flexible Time Entry**
 Life happens. Forgot to start the timer? No problem.
 
-![Manual Time Entry](docs/screenshots/manual_time_modal_success.png)
+### 📊 **Live Progress Dashboard**
+Watch your earned time grow as you build healthy habits with real-time balance tracking and smart feedback systems.
 
-*Quick modal interface for adding activities retroactively*
+### 🔥 **Gamified Motivation System**
+Build momentum with emoji-based progress tracking and streak rewards that actually work.
+
+---
+
+## 🎨 **Product UI Features & Flow**
+
+### **Complete User Journey Through Screenshots**
+
+#### **1. Home Dashboard - Main Interface**
+![Home Dashboard](docs/screenshots/1%20Home%20Page.jpg)
+*Clean, modern dashboard showing all activity cards, screen time tracking, and progress visualization with enhanced UI design.*
+
+#### **2. Start Automatic Tracking**
+![Start Tracking](docs/screenshots/2%20Click%20to%20begin%20tracking%20time%20automatically.jpg)
+*Simple one-tap interaction to start automatic activity tracking with real-time timer display.*
+
+#### **3. Manual Time Entry**
+![Manual Entry](docs/screenshots/3%20Option%20to%20add%20time%20Manually.jpg)
+*Long-press gesture opens modal for manual time entry when you forget to start the timer.*
+
+#### **4. Screen Time Balance**
+![Screen Time Balance](docs/screenshots/4%20Know%20what%20you%20have%20earned%20vs%20used.jpg)
+*Real-time display of earned vs used screen time with manual editing capabilities.*
+
+#### **5. Streak Tracking**
+![Streak Tracking](docs/screenshots/5%20Track%20day%20streak.jpg)
+*Daily activity streak counter with emoji-based motivation and progress tracking.*
+
+#### **6. Daily Summary**
+![Daily Summary](docs/screenshots/6%20Daily%20Summary%20tracking.jpg)
+*Comprehensive daily activity summary with status feedback and balance calculations.*
+
+#### **7. How It Works**
+![Instructions](docs/screenshots/7%20At%20end%20how%20it%20works.jpg)
+*Clear explanation of activity multipliers and how the earning system works with visual indicators.*
 
 ---
 
@@ -66,19 +100,13 @@ Life happens. Forgot to start the timer? No problem.
 ### **Real-Time Balance Tracking**
 Watch your earned time grow as you build healthy habits:
 
-![Screen Time Dashboard](docs/screenshots/summary_card_closeup.png)
-
 **Smart Feedback System:**
 - 🟢 **Green Zone**: Balanced lifestyle (±15 min)
 - 🟡 **Yellow Zone**: Minor adjustment needed (±15-30 min)
 - 🔴 **Red Zone**: Time to get active (>30 min over)
 
 ### **3D Progress Visualization**
-Beautiful, engaging visuals that make progress tangible:
-
-![3D Visualization](docs/screenshots/three_visualization_closeup.png)
-
-*Three.js-powered animated bars showing earned vs used time*
+Beautiful, engaging visuals that make progress tangible with Three.js-powered animated bars showing earned vs used time.
 
 ---
 
@@ -86,8 +114,6 @@ Beautiful, engaging visuals that make progress tangible:
 
 ### **Streak Rewards That Actually Work**
 Build momentum with emoji-based progress tracking:
-
-![Streak Counter](docs/screenshots/streak_counter_closeup.png)
 
 | Streak Level | Emoji | Duration | Psychology |
 |--------------|-------|----------|------------|
@@ -108,8 +134,6 @@ Build momentum with emoji-based progress tracking:
 
 ### **Designed for Your Lifestyle**
 Perfect for busy people who want better habits without complexity:
-
-![Mobile View](docs/screenshots/mobile_view.png)
 
 **Key Mobile Features:**
 - **Touch-optimized**: Large, easy-to-hit buttons
@@ -217,12 +241,6 @@ Nginx                 → Production-ready serving
 
 ## 🚀 **Quick Start Guide**
 
-### **🎯 For Users: Try It Now**
-1. **Visit the live app**: [ScreenTime Balance PWA](https://your-app-url.com)
-2. **Install on mobile**: Tap "Add to Home Screen" in your browser
-3. **Start your first activity**: Tap any timer to begin earning screen time
-4. **Track your progress**: Watch your balance grow with healthy habits
-
 ### **👨‍💻 For Developers: Setup**
 
 #### **Prerequisites**
@@ -326,10 +344,6 @@ Development Stack
 └── Testing/      # Jest + React Testing Library
 ```
 
-
-
-
-
 ---
 
 ## 🧪 **Quality Assurance**
@@ -353,33 +367,6 @@ Development Stack
 | **Offline Functionality** | 100% | 100% |
 
 ---
-
-## 🚀 **Getting Started**
-
-### **👨‍💻 For Developers: Setup**
-
-#### **Prerequisites**
-```bash
-Node.js 16+
-Yarn package manager
-Git
-```
-
-#### **Installation**
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/screentime-balance-pwa.git
-cd screentime-balance-pwa
-
-# Install frontend dependencies
-cd frontend
-yarn install
-
-# Start development server
-yarn dev
-
-# Visit http://localhost:3000
-```
 
 ## 📄 **License**
 

@@ -66,18 +66,18 @@ export const StreakCounter: React.FC<StreakCounterProps> = ({
   };
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm">
+    <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
       <div className="text-center">
-        <div className="text-4xl mb-2">
+        <div className="text-4xl mb-3">
           {getStreakEmoji(streak.currentStreak)}
         </div>
-        <div className="text-lg font-bold text-gray-800">
+        <div className="text-lg font-bold text-gray-800 mb-1">
           {streak.currentStreak} Day Streak
         </div>
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-gray-600 mb-3">
           Longest: {streak.longestStreak} days
         </div>
-        <div className="text-xs text-gray-500 mt-2">
+        <div className="text-xs text-gray-500 bg-slate-50 rounded-lg p-2">
           Keep 30+ min daily activity to maintain streak
         </div>
       </div>

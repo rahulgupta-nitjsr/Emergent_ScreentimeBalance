@@ -62,7 +62,7 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
   const getBoxColor = () => {
     if (isRunning) return 'bg-green-500';
     if (totalTime > 0) return 'bg-blue-500';
-    return 'bg-gray-200';
+    return 'bg-slate-400 hover:bg-slate-500';
   };
 
   const formatTotalTime = (minutes: number) => {
@@ -77,7 +77,7 @@ export const TimerBox: React.FC<TimerBoxProps> = ({
   return (
     <>
       <div
-        className={`relative p-6 rounded-2xl shadow-lg transition-all duration-200 active:scale-95 ${getBoxColor()} text-white min-h-[140px] flex flex-col justify-between cursor-pointer timer-box`}
+        className={`relative p-6 rounded-2xl shadow-lg transition-all duration-200 active:scale-95 ${getBoxColor()} text-white min-h-[140px] flex flex-col justify-between cursor-pointer timer-box hover:shadow-xl`}
         onClick={handleClick}
         onDoubleClick={handleDoubleClick}
         onTouchStart={handleTouchStart}

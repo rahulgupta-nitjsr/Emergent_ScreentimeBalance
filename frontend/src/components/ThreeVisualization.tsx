@@ -126,7 +126,7 @@ export const ThreeVisualization: React.FC<ThreeVisualizationProps> = ({
   return (
     <div
       ref={mountRef}
-      className="w-full h-40 rounded-xl overflow-hidden bg-gray-100"
+      className="w-full h-40 rounded-xl overflow-hidden bg-slate-50 border border-slate-200"
     />
   );
 };

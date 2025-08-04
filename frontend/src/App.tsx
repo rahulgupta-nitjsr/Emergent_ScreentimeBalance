@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 p-4">
       <div className="max-w-md mx-auto space-y-6">
         {/* Header */}
         <div className="text-center pt-8 pb-4">
@@ -93,7 +93,7 @@ function App() {
           </div>
 
           {/* Three.js Visualization */}
-          <div className="bg-white rounded-xl p-4 shadow-sm">
+          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
             <h3 className="text-lg font-semibold text-gray-800 text-center mb-4">
               Progress Visualization
             </h3>
@@ -120,13 +120,25 @@ function App() {
         </div>
 
         {/* Instructions */}
-        <div className="bg-white rounded-xl p-4 shadow-sm">
-          <h3 className="font-semibold text-gray-800 mb-2">How it works:</h3>
-          <ul className="text-sm text-gray-600 space-y-1">
-            <li>• Outdoor: 1 min = 2 mins screen time</li>
-            <li>• Exercise: 1 min = 3 mins screen time</li>
-            <li>• Productive: 1 min = 1.5 mins screen time</li>
-            <li>• Sleep: +0.5 bonus for 7+ hours</li>
+        <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+          <h3 className="font-semibold text-gray-800 mb-3">How it works:</h3>
+          <ul className="text-sm text-gray-600 space-y-2">
+            <li className="flex items-center">
+              <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              Outdoor: 1 min = 2 mins screen time
+            </li>
+            <li className="flex items-center">
+              <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+              Exercise: 1 min = 3 mins screen time
+            </li>
+            <li className="flex items-center">
+              <span className="w-2 h-2 bg-slate-400 rounded-full mr-3"></span>
+              Productive: 1 min = 1.5 mins screen time
+            </li>
+            <li className="flex items-center">
+              <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+              Sleep: +0.5 bonus for 7+ hours
+            </li>
           </ul>
         </div>
       </div>
